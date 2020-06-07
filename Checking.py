@@ -2,6 +2,7 @@ import selenium
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
+import schedule
 import datetime
 from joblib import Parallel, delayed
 from selenium.webdriver.support.select import Select
@@ -9,240 +10,146 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from joblib import Parallel, delayed
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.expected_conditions import presence_of_element_located as presense_located
-from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-
-max_retry = 5
-
-class Nike:
-
-    def __init__(self, credentials):
-        self.credentials = credentials
-        cap = DesiredCapabilities().FIREFOX
-        cap["marionette"] = True
-        options = Options()
-        options.headless = False
-        options.add_argument("--window-size=1920,1080")
-        cap["pageLoadStrategy"] = "eager"
-        # options.proxy = credentials['proxy']
-        self.browser = webdriver.Firefox(executable_path='Drivers/geckodriver',
-                                         desired_capabilities=cap, options=options)
-        self.wait = WebDriverWait(self.browser, 5)
-        self.browser.get(credentials['link'])
-
-    def login(self):
-        user = self.credentials['user']
-        pasw = self.credentials['pasw']
-        self.browser.get(self.credentials['link'])
-        retry = 0
-        while True:
-            try:
-                retry += 1
-                b = self.wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, '//*[@id="root"]/div/div/div[1]/div/header/div[1]/section/ul/li['
-                               '1]/button')))
-                b.click()
-
-                a = self.wait.until(EC.visibility_of_element_located((By.NAME, 'emailAddress')))
-                b = self.wait.until(EC.visibility_of_element_located((By.NAME, 'password')))
-                a.send_keys(user)
-                b.send_keys(pasw)
-
-                go = self.wait.until(presense_located((By.CSS_SELECTOR, 'input[type="button"]')))
-                go.click()
-                time.sleep(3)
-
-                try:
-                    self.browser.find_element_by_class_name("nike-unite-error-panel")
-
-                    print('Exception  logging in retry ' + str(retry))
-                    self.browser.get(self.credentials['link'])
-
-                    if retry > max_retry:
-                        print('Error in user login page  - ' + str(user))
-                        return
 
 
-                except:
-                    print('Logged in')
-                    break
+def nike(link, credentials):
+    browser = webdriver.Chrome('/Users/rob/Programming/Checker/chromedriver')
+    browser.get(link)
+    time.sleep(2)
+    credentials = list(credentials.values())
+    #  Finding shoes
+    size = credentials[-1]
+    shoes = browser.find_element_by_xpath("//button[contains(text(),'{}')]".format(size))
+    browser.execute_script("arguments[0].scrollIntoView(true);", shoes)
+    shoes.click()
+    time.sleep(2)
 
-            except:
-                print('Exception  logging in retry ' + str(retry))
-                self.browser.save_screenshot("snapshots/login-error.png")
-                if retry > max_retry:
-                    print('Error in user login page  - ' + str(user))
-                    return
+    # Finding cart
+    add_to_cart = browser.find_element_by_css_selector('button[data-qa="add-to-cart"]')
+    browser.execute_script("arguments[0].scrollIntoView(true);", add_to_cart)
+    add_to_cart.click()
+    time.sleep(2)
 
-    def availability(self):
-        size = self.credentials['size']
-        while True:
-            try:
-                self.browser.refresh()
-                shoes = self.wait.until(presense_located((By.XPATH, "//button[contains(text(),'{}')]".format(size))))
-                self.browser.execute_script("arguments[0].scrollIntoView(true);", shoes)
-                shoes.click()
-                print('Shoes chosen')
-                break
-            except Exception:
-                print('No shoes')
+    # going to cart
+    browser.get('https://www.nike.com/ru/ru/cart')
 
-    def add_to_cart(self):
-        retry = 0
-        while True:
-            try:
-                retry += 1
-                add_to_cart = self.wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
-                self.browser.execute_script("arguments[0].scrollIntoView(true);", add_to_cart)
-                add_to_cart.click()
-                try:
-                    self.browser.find_element_by_xpath('//*[@id="root"]/div/div/div[2]/div/div/div/div/div[2]')
-                    print('added')
-                    break
-                except:
-                    try:
-                        self.browser.find_element_by_xpath('//*[@id="root"]/div/div/div[1]/div/header/div[1]/section/ul/li[3]/a/span')
-                        print('added to cart')
-                        break
-                    except:
-                        print('cart Empty')
-                        if retry > max_retry:
-                            print('Too much errors')
-                            return
+    # Make an order
+    time.sleep(5)
+    buy_without_reg = browser.find_element_by_css_selector('button[data-automation="guest-checkout-button"]')
+    buy_without_reg.click()
 
-            except Exception:
-                print('Cart error')
-                if retry > max_retry:
-                    print('Too much errors')
-                    break
+    #  Forms
+    forms = ['Shipping_LastName', 'Shipping_FirstName', 'Shipping_MiddleName',
+             'Shipping_PostCode', 'Shipping_Region', 'Shipping_Address1',
+             'Shipping_Address2', 'Shipping_phonenumber',
+             'shipping_Email', 'idNumber', 'IdIssuingAuthority',
+             'IdVatNumber']
+
+    first_forms = credentials[:len(forms)]
+    time.sleep(5)
+    for name, fill in zip(forms, first_forms):  # make zip and iterate
+        form = browser.find_element_by_id(name)
+        form.send_keys(fill)
+
+    # Check the date
+    checkbox = browser.find_element_by_class_name('checkbox-checkmark')
+    checkbox.click()
+
+    # Continue
+    time.sleep(4)
+    billing = browser.find_element_by_id('shippingSubmit')
+    billing.click()
+
+    # Submitting
+    time.sleep(5)
+    button_submit = browser.find_element_by_id('billingSubmit')
+    button_submit.click()
+    time.sleep(8)
+
+    # card Payment
+    browser.switch_to.frame(browser.find_element_by_class_name('paymentFrameApexx'))
+
+    card_fields = ['card_number', 'expiry_month', 'expiry_year', 'cvv']
+    second_forms = credentials[len(forms):-1]
+    for card_field, fill in zip(card_fields, second_forms):
+        form = browser.find_element_by_id(card_field)
+        form.send_keys(fill)
 
 
+    pay = browser.find_element_by_id('hostedPaymentsubmitBtn')
+    pay.click()
+    time.sleep(3)
+    
+    browser.switch_to.default_content()
+    # PayPal
+    # Paypal = browser.find_element_by_id('PayPalMark_option')
+    # Paypal.click()
+    # pp_continue = browser.find_element_by_id('PayPal_Continue')
+    # pp_continue.click()
+    # time.sleep(5)
+    # #Payment PP
+    # mail = browser.find_element_by_id('email')
+    # mail.send_keys('Later@gmail.com')
+    # next = browser.find_element_by_id('btnNext')
+    # next.click()
+    # time.sleep(3)
+    # pswrd = browser.find_element_by_id('password')
+    # pswrd.send_keys('Later')
+    # pay_button = browser.find_element_by_id('btnLogin')
+    # pay_button.click()
 
-    def nike(self):
-        tic = time.time()
+    time.sleep(10)
+    browser.close()
 
-        credentials = self.credentials
 
-        # Finding cart
-        add_to_cart = self.wait.until(presense_located((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
-        self.wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
-        self.browser.execute_script("arguments[0].scrollIntoView(true);", shoes)
-        add_to_cart.click()
-        time.sleep(1)
-        try:
-            self.wait.until(presense_located((By.CSS_SELECTOR, 'button[data-qa="checkout-link"]')))
-        except:
-            print('exception')
-            add_to_cart.click()
+def start(link, credentials, date_of_release):
+    while 1:
+        date = datetime.datetime.now()
+        if date.day == date_of_release.day and date.month == date_of_release.month:
+            break
+        else:
+            time.sleep(5)
+    Parallel(n_jobs=-1)(delayed(nike)(link, i) for i in credentials)
 
-        self.browser.get('https://www.nike.com/ru/ru/cart')
-
-        # Make an order
-        self.wait.until(presense_located((By.CSS_SELECTOR, 'div[data-automation="cart-item"')))
-        buy_without_reg = self.wait.until(presense_located((By.XPATH, '//*[@id="maincontent"]/div[2]/div[2]/aside/div['
-                                                                      '5]/div/button[1]')))
-        buy_without_reg.click()
-        print('Bought')
-        #  Forms
-        forms = ['Shipping_LastName', 'Shipping_FirstName', 'Shipping_MiddleName',
-                 'Shipping_PostCode', 'Shipping_Region', 'Shipping_Address1',
-                 'Shipping_Address2', 'Shipping_phonenumber',
-                 'shipping_Email', 'idNumber', 'IdIssuingAuthority',
-                 'IdVatNumber']
-        try:
-            self.wait.until(EC.element_to_be_clickable((By.ID, 'Shipping_LastName')))
-        except:
-            time.sleep(2)
-
-        for form in forms:
-            f = self.wait.until(EC.element_to_be_clickable((By.ID, form)))
-            f.send_keys(credentials[form])
-
-        print('Formed')
-
-        self.wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'checkbox-checkmark')))
-        a = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'checkbox-checkmark')))
-        self.browser.execute_script("arguments[0].scrollIntoView(true);", a)
-        try:
-            a.click()
-        except:
-            time.sleep(2)
-            a.click()
-
-        # Continue
-
-        billing = self.wait.until(presense_located((By.ID, 'shippingSubmit')))
-        self.browser.execute_script("arguments[0].scrollIntoView(true);", billing)
-        billing.click()
-
-        # Submitting
-
-        button_submit = self.wait.until(presense_located((By.ID, 'billingSubmit')))
-        self.wait.until(EC.element_to_be_clickable((By.ID, 'billingSubmit')))
-        button_submit.click()
-
-        # card Payment
-
-        fram = self.wait.until(presense_located((By.CLASS_NAME, 'paymentFrameApexx')))
-        self.browser.switch_to.frame(fram)
-
-        card_fields = ['card_number', 'expiry_month', 'expiry_year', 'cvv']
-        # Delete on fast internet
-        for field in card_fields:
-            f = self.wait.until(EC.visibility_of_element_located((By.ID, field)))
-            f.send_keys(credentials[field])
-
-        pay = self.browser.find_element_by_id('hostedPaymentsubmitBtn')
-        pay.click()
-
-        self.browser.switch_to.default_content()
-        tac = time.time()
-        print(tac - tic)
-        # PayPal
-        # Paypal = browser.find_element_by_id('PayPalMark_option')
-        # Paypal.click()
-        # pp_continue = browser.find_element_by_id('PayPal_Continue')
-        # pp_continue.click()
-        # time.sleep(5)
-        # #Payment PP
-        # mail = browser.find_element_by_id('email')
-        # mail.send_keys('Later@gmail.com')
-        # next = browser.find_element_by_id('btnNext')
-        # next.click()
-        # time.sleep(3)
-        # pswrd = browser.find_element_by_id('password')
-        # pswrd.send_keys('Later')
-        # pay_button = browser.find_element_by_id('btnLogin')
-        # pay_button.click()
-        print('DONE')
-        time.sleep(20)
-        self.browser.close()
-
-    def start(self, update, context, done_list):  # credentials
-        credentials = context.user_data['credentials']
-
-        check_list = []
-        for credit in credentials:
-            if (credit not in check_list) and (credit not in done_list):
-                date = datetime.datetime.now()
-                dor = credit['date'].split('.')
-                if len(dor) > 3:
-                    date_of_release = datetime. \
-                        datetime(year=int(dor[0]), month=int(dor[1]), day=int(dor[2]), hour=int(dor[3]))
-                    if date.day == date_of_release.day and date.month == date_of_release.month and date.hour == date_of_release.hour:
-                        check_list.append(credit)
-                        done_list.append(credit)
-                else:
-                    date_of_release = datetime. \
-                        datetime(year=int(dor[0]), month=int(dor[1]), day=int(dor[2]))
-                    if date.day == date_of_release.day and date.month == date_of_release.month:
-                        check_list.append(credit)
-                        done_list.append(credit)
-
-        print('checking ', len(check_list))
-        if check_list:
-            Parallel(n_jobs=-1)(delayed(self.nike)(d) for d in check_list)
-
-        return done_list
+#release_date = datetime.datetime(year=2020, month=6, day=7)
+#ln = 'https://www.nike.com/ru/launch/t/air-max-95-split-style'
+# d = [{
+#     'Shipping_LastName': 'hello',
+#     'Shipping_FirstName': 'Lol',
+#     'Shipping_MiddleName': 'adfvav',
+#     'Shipping_PostCode': '190000',
+#     'Shipping_Region': 'Санкт-Петербург',
+#     'Shipping_Address1': 'No matter',
+#     'Shipping_Address2': 'Jasrvasv',
+#     'Shipping_phonenumber': '9052318663',
+#     'shipping_Email': 'advaodrv@gmail.com',
+#     'idNumber': '1832090230',
+#     'IdIssuingAuthority': 'odnfvoaernv',
+#     'IdVatNumber': '123456789123',
+#     'card_number': '4255123443211234',
+#     'expiry_month': '05',
+#     'expiry_year': '60',
+#     'cvv': '212',
+#     'Size': '42'
+# },
+#     {
+#         'Shipping_LastName': 'two',
+#         'Shipping_FirstName': 'oiadnfvoa',
+#         'Shipping_MiddleName': 'sadfasdf',
+#         'Shipping_PostCode': '190000',
+#         'Shipping_Region': 'Санкт-Петербург',
+#         'Shipping_Address1': 'No matter',
+#         'Shipping_Address2': 'fndniovndo',
+#         'Shipping_phonenumber': '9052318653',
+#         'shipping_Email': 'advaodrv@gmail.com',
+#         'idNumber': '1832090230',
+#         'IdIssuingAuthority': 'odnfvoaernv',
+#         'IdVatNumber': '123456789123',
+#         'card_number': '4255123443211234',
+#         'expiry_month': '07',
+#         'expiry_year': '60',
+#         'cvv': '212',
+#         'Size': '42'
+#     }
+# ]  # credentials
+#start(ln, d, release_date)
