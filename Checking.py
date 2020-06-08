@@ -12,17 +12,20 @@ from joblib import Parallel, delayed
 from selenium.common.exceptions import NoSuchElementException
 
 
-def nike(link, credentials):
+# todo add dictionary
+def nike(credentials):
     browser = webdriver.Chrome('/Users/rob/Programming/Checker/chromedriver')
-    browser.get(link)
+    browser.get(credentials['link'])
     time.sleep(2)
-    credentials = list(credentials.values())
     #  Finding shoes
-    size = credentials[-1]
-    shoes = browser.find_element_by_xpath("//button[contains(text(),'{}')]".format(size))
-    browser.execute_script("arguments[0].scrollIntoView(true);", shoes)
-    shoes.click()
-    time.sleep(2)
+    size = credentials['size']
+    try:
+        shoes = browser.find_element_by_xpath("//button[contains(text(),'{}')]".format(size))
+        browser.execute_script("arguments[0].scrollIntoView(true);", shoes)
+        shoes.click()
+        time.sleep(2)
+    except:
+        return
 
     # Finding cart
     add_to_cart = browser.find_element_by_css_selector('button[data-qa="add-to-cart"]')
@@ -44,12 +47,10 @@ def nike(link, credentials):
              'Shipping_Address2', 'Shipping_phonenumber',
              'shipping_Email', 'idNumber', 'IdIssuingAuthority',
              'IdVatNumber']
-
-    first_forms = credentials[:len(forms)]
     time.sleep(5)
-    for name, fill in zip(forms, first_forms):  # make zip and iterate
-        form = browser.find_element_by_id(name)
-        form.send_keys(fill)
+    for form in forms:
+        f = browser.find_element_by_id(form)
+        f.send_keys(credentials[form])
 
     # Check the date
     checkbox = browser.find_element_by_class_name('checkbox-checkmark')
@@ -70,16 +71,15 @@ def nike(link, credentials):
     browser.switch_to.frame(browser.find_element_by_class_name('paymentFrameApexx'))
 
     card_fields = ['card_number', 'expiry_month', 'expiry_year', 'cvv']
-    second_forms = credentials[len(forms):-1]
-    for card_field, fill in zip(card_fields, second_forms):
-        form = browser.find_element_by_id(card_field)
-        form.send_keys(fill)
 
+    for field in card_fields:
+        f = browser.find_element_by_id(field)
+        f.send_keys(credentials[field])
 
     pay = browser.find_element_by_id('hostedPaymentsubmitBtn')
     pay.click()
     time.sleep(3)
-    
+
     browser.switch_to.default_content()
     # PayPal
     # Paypal = browser.find_element_by_id('PayPalMark_option')
@@ -97,22 +97,41 @@ def nike(link, credentials):
     # pswrd.send_keys('Later')
     # pay_button = browser.find_element_by_id('btnLogin')
     # pay_button.click()
-
     time.sleep(10)
     browser.close()
 
 
-def start(link, credentials, date_of_release):
+def start(credentials):
+    done_list = []
     while 1:
-        date = datetime.datetime.now()
-        if date.day == date_of_release.day and date.month == date_of_release.month:
-            break
-        else:
-            time.sleep(5)
-    Parallel(n_jobs=-1)(delayed(nike)(link, i) for i in credentials)
+        check_list = []
+        for credit in credentials:
+            if (credit not in check_list) and (credit not in done_list):
+                date = datetime.datetime.now()
+                dor = credit['date'].split('.')
+                if len(dor) > 3:
+                    date_of_release = datetime. \
+                        datetime(year=int(dor[0]), month=int(dor[1]), day=int(dor[2]), hour=int(dor[3]))
+                    if date.day == date_of_release.day and date.month == date_of_release.month and date.hour == date_of_release.hour:
+                        check_list.append(credit)
+                        done_list.append(credit)
+                else:
+                    date_of_release = datetime. \
+                        datetime(year=int(dor[0]), month=int(dor[1]), day=int(dor[2]))
+                    if date.day == date_of_release.day and date.month == date_of_release.month:
+                        check_list.append(credit)
+                        done_list.append(credit)
 
-#release_date = datetime.datetime(year=2020, month=6, day=7)
-#ln = 'https://www.nike.com/ru/launch/t/air-max-95-split-style'
+        if check_list:
+            Parallel(n_jobs=-1)(delayed(nike)(d) for d in check_list)
+
+        if len(done_list) == len(credentials):
+            break
+
+        time.sleep(60)
+
+# release_date = datetime.datetime(year=2020, month=6, day=7)
+# ln = 'https://www.nike.com/ru/launch/t/air-max-95-split-style'
 # d = [{
 #     'Shipping_LastName': 'hello',
 #     'Shipping_FirstName': 'Lol',
@@ -152,4 +171,4 @@ def start(link, credentials, date_of_release):
 #         'Size': '42'
 #     }
 # ]  # credentials
-#start(ln, d, release_date)
+# start(ln, d, release_date)
