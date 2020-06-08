@@ -12,7 +12,6 @@ from joblib import Parallel, delayed
 from selenium.common.exceptions import NoSuchElementException
 
 
-# todo add dictionary
 def nike(credentials):
     browser = webdriver.Chrome('/Users/rob/Programming/Checker/chromedriver')
     browser.get(credentials['link'])
@@ -101,9 +100,11 @@ def nike(credentials):
     browser.close()
 
 
-def start(credentials):
+def start(update, context):  # credentials
+    credentials = context.user_data['credentials']
     done_list = []
     while 1:
+
         check_list = []
         for credit in credentials:
             if (credit not in check_list) and (credit not in done_list):
