@@ -10,7 +10,14 @@ from uuid import uuid4
 import Checking
 import datetime
 from joblib import Parallel, delayed
-
+from multiprocessing import Pool
+import ray
+from multiprocessing import Process
+from telegram.ext.dispatcher import run_async
+import os
+import sys
+from threading import Thread
+import threading
 
 tok = '1194379393:AAG9NZwGoQZp8pdr_RkrHS9T8Ae_5vOkN64'
 bot = telegram.Bot(token=tok)
@@ -29,9 +36,21 @@ def start(update, context):
     context.user_data['credentials'] = []
 
 
+def stop_and_restart():
+    """Gracefully stop the Updater and replace the current process with a new one"""
+    updater.stop()
+    os.execl(sys.executable, sys.executable, *sys.argv)
+
+
+def restart(update, context):
+    update.message.reply_text('Bot is restarting...')
+    Thread(target=stop_and_restart).start()
+    print('started')
+
+
 def receiving_data(update, context):
-    message = str(update.message.text).splitlines()
-    # if we don't have data now
+    print(update.message.text)
+    message = update.message.text.splitlines()
     values = message
     forms = ['link', 'date', 'size', 'Shipping_LastName', 'Shipping_FirstName', 'Shipping_MiddleName',
              'Shipping_PostCode',
@@ -42,21 +61,17 @@ def receiving_data(update, context):
     context.user_data['credentials'].append(dict(zip(forms, values)))
 
 
+@run_async
 def start_checking(update, context):
+    print(threading.active_count())
     credentials = context.user_data['credentials']
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text='Running')
-    Checking.start(credentials)
+    Checking.start(update, context)
+
+
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text='Everything is done')
-
-
-def stoper(update, context):
-    if str.lower(str(update.message.text)) == 'stop':
-        print('working')
-        updater.stop()
-        updater.start_polling()
-
 
 
 start_handler = CommandHandler('start', start)
@@ -64,6 +79,8 @@ dispatcher.add_handler(start_handler)
 
 check_starter = CommandHandler('run', start_checking)
 dispatcher.add_handler(check_starter)
+
+dispatcher.add_handler(CommandHandler('stop', restart))
 
 # it should be last
 data_receiver = MessageHandler(Filters.text, receiving_data)
