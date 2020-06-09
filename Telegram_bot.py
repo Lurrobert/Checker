@@ -49,7 +49,6 @@ def restart(update, context):
 
 
 def receiving_data(update, context):
-    print(update.message.text)
     message = update.message.text.splitlines()
     values = message
     forms = ['link', 'date', 'size', 'Shipping_LastName', 'Shipping_FirstName', 'Shipping_MiddleName',
@@ -63,7 +62,6 @@ def receiving_data(update, context):
 
 @run_async
 def start_checking(update, context):
-    print(threading.active_count())
     credentials = context.user_data['credentials']
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text='Running')

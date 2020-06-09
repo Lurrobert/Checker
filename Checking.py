@@ -13,8 +13,14 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 def nike(credentials):
-    browser = webdriver.Chrome('/Users/rob/Programming/Checker/chromedriver')
+    browser = webdriver.Chrome('/Users/rob/Programming/Checker/chromedriver', prox)
+    # TODO add proxy server
+
+    # chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument('--proxy-server=http://%s' % PROXY)
+
     browser.get(credentials['link'])
+    # TODO maximum speed
     time.sleep(2)
     #  Finding shoes
     size = credentials['size']
@@ -80,6 +86,7 @@ def nike(credentials):
     time.sleep(3)
 
     browser.switch_to.default_content()
+
     # PayPal
     # Paypal = browser.find_element_by_id('PayPalMark_option')
     # Paypal.click()
@@ -96,6 +103,7 @@ def nike(credentials):
     # pswrd.send_keys('Later')
     # pay_button = browser.find_element_by_id('btnLogin')
     # pay_button.click()
+
     time.sleep(10)
     browser.close()
 
@@ -125,45 +133,3 @@ def start(update, context, done_list):  # credentials
         Parallel(n_jobs=-1)(delayed(nike)(d) for d in check_list)
 
     return done_list
-# release_date = datetime.datetime(year=2020, month=6, day=7)
-# ln = 'https://www.nike.com/ru/launch/t/air-max-95-split-style'
-# d = [{
-#     'Shipping_LastName': 'hello',
-#     'Shipping_FirstName': 'Lol',
-#     'Shipping_MiddleName': 'adfvav',
-#     'Shipping_PostCode': '190000',
-#     'Shipping_Region': 'Санкт-Петербург',
-#     'Shipping_Address1': 'No matter',
-#     'Shipping_Address2': 'Jasrvasv',
-#     'Shipping_phonenumber': '9052318663',
-#     'shipping_Email': 'advaodrv@gmail.com',
-#     'idNumber': '1832090230',
-#     'IdIssuingAuthority': 'odnfvoaernv',
-#     'IdVatNumber': '123456789123',
-#     'card_number': '4255123443211234',
-#     'expiry_month': '05',
-#     'expiry_year': '60',
-#     'cvv': '212',
-#     'Size': '42'
-# },
-#     {
-#         'Shipping_LastName': 'two',
-#         'Shipping_FirstName': 'oiadnfvoa',
-#         'Shipping_MiddleName': 'sadfasdf',
-#         'Shipping_PostCode': '190000',
-#         'Shipping_Region': 'Санкт-Петербург',
-#         'Shipping_Address1': 'No matter',
-#         'Shipping_Address2': 'fndniovndo',
-#         'Shipping_phonenumber': '9052318653',
-#         'shipping_Email': 'advaodrv@gmail.com',
-#         'idNumber': '1832090230',
-#         'IdIssuingAuthority': 'odnfvoaernv',
-#         'IdVatNumber': '123456789123',
-#         'card_number': '4255123443211234',
-#         'expiry_month': '07',
-#         'expiry_year': '60',
-#         'cvv': '212',
-#         'Size': '42'
-#     }
-# ]  # credentials
-# start(ln, d, release_date)
