@@ -51,7 +51,7 @@ def restart(update, context):
 def receiving_data(update, context):
     message = update.message.text.splitlines()
     values = message
-    forms = ['link', 'date', 'size', 'Shipping_LastName', 'Shipping_FirstName', 'Shipping_MiddleName',
+    forms = ['link', 'proxy', 'date', 'size', 'Shipping_LastName', 'Shipping_FirstName', 'Shipping_MiddleName',
              'Shipping_PostCode',
              'Shipping_Region', 'Shipping_Address1', 'Shipping_Address2', 'Shipping_phonenumber',
              'shipping_Email', 'idNumber', 'IdIssuingAuthority', 'IdVatNumber', 'card_number',
