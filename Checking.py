@@ -15,46 +15,76 @@ from selenium.webdriver.support.expected_conditions import presence_of_element_l
 
 def nike(credentials):
     PROXY = credentials['proxy']
-    # chrome_options = webdriver.ChromeOptions()
-    # chrome_options.add_argument('--proxy-server=http://%s' % PROXY)
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--start-maximized")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument('window-size=1920x1480')
+    chrome_options.add_argument("--window-size=1920,1080")
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--proxy-server='direct://'")
+    chrome_options.add_argument("--proxy-bypass-list=*")
+    chrome_options.add_argument("--start-maximized")
+    chrome_options.add_argument('--allow-running-insecure-content')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--ignore-certificate-errors')
+    #chrome_options.add_argument('--proxy-server=http://%s' % PROXY)
 
-    browser = webdriver.Chrome('/Users/rob/Programming/Checker/chromedriver')  # , chrome_options=chrome_options
+    browser = webdriver.Chrome('/Users/rob/Programming/Checker/chromedriver', chrome_options=chrome_options)
     browser.get(credentials['link'])
     wait = WebDriverWait(browser, 10)
-    # TODO maximum speed
     # Finding shoes
     size = credentials['size']
     try:
-        shoes = wait.until(EL((By.XPATH, "//button[contains(text(),'{}')]".format(size))))
+        shoes = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'{}')]".format(size))))
         browser.execute_script("arguments[0].scrollIntoView(true);", shoes)
         shoes.click()
+        #later less
+        time.sleep(2)
     except:
         return
 
-    # Finding cart
-    # add_to_cart = browser.find_element_by_css_selector('button[data-qa="add-to-cart"]')
-    add_to_cart = wait.until(EL((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
-    browser.execute_script("arguments[0].scrollIntoView(true);", add_to_cart)
-    time.sleep(2)
-    add_to_cart.click()
+    # Cart
+    # visible
+    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
 
-    # going to cart
-    wait.until(EL((By.CSS_SELECTOR, 'button[data-qa="checkout-link"]')))
+    add_to_cart = wait.until(EL((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
+    wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
+    # add_to_cart.submit()
+    add_to_cart.click()
+    print('cart')
+    # wait.until(EL((By.CSS_SELECTOR, 'button[data-qa="checkout-link"]')))
+    # wait.until(EL((By.CSS_SELECTOR, 'div[data-qa="modal-container"]')))
+
+    # wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[data-qa = "view-cart-link"]')))
+
     browser.get('https://www.nike.com/ru/ru/cart')
 
     # Make an order
-    wait.until(EL((By.CSS_SELECTOR, 'div[data-automation="cart-item"')))
-    buy_without_reg = wait.until(EL((By.CSS_SELECTOR, 'button[data-automation="guest-checkout-button"]')))
-    buy_without_reg.click()
+    # buy_without_reg = wait.until(EL((By.CSS_SELECTOR, 'button[data-automation="guest-checkout-button"]')))
 
+    # wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[data-automation="guest-checkout-button"]'))).click()
+
+    time.sleep(5) # must
+    a = browser.find_element_by_css_selector('button[data-automation="guest-checkout-button"]')
+    a.click()
+    print('passed')
+    print(len(browser.find_elements_by_css_selector('div[data-automation="cart-item"]')))
     #  Forms
     forms = ['Shipping_LastName', 'Shipping_FirstName', 'Shipping_MiddleName',
              'Shipping_PostCode', 'Shipping_Region', 'Shipping_Address1',
              'Shipping_Address2', 'Shipping_phonenumber',
              'shipping_Email', 'idNumber', 'IdIssuingAuthority',
              'IdVatNumber']
+
+    # checkbox = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'checkbox-checkmark')))
+    time.sleep(5)
+    print(browser.current_url)
     for form in forms:
-        f = wait.until(EL((By.ID, form)))
+        #f = wait.until(EL((By.ID, form)))
+        f = browser.find_element_by_id(form)
         f.send_keys(credentials[form])
 
     # Check the date
@@ -62,32 +92,32 @@ def nike(credentials):
     checkbox.click()
 
     # Continue
-    # billing = browser.find_element_by_id('shippingSubmit')
-    billing = wait.until(EL((By.ID, 'shippingSubmit')))
-    wait.until(EC.element_to_be_clickable((By.ID, 'shippingSubmit')))
+    billing = browser.find_element_by_id('shippingSubmit')
+    # billing = wait.until(EL((By.ID, 'shippingSubmit')))
+    # wait.until(EC.element_to_be_clickable((By.ID, 'shippingSubmit')))
     billing.click()
-
     time.sleep(0.1)
 
     # Submitting
-    # button_submit = browser.find_element_by_id('billingSubmit')
-    button_submit = wait.until(EL((By.ID, 'billingSubmit')))
+    button_submit = browser.find_element_by_id('billingSubmit')
+    # button_submit = wait.until(EL((By.ID, 'billingSubmit')))
     time.sleep(0.1)
     # wait.until(EL((By.CSS_SELECTOR, 'div[data-ajax-loading style="display: none;"]')))
-    wait.until(EC.element_to_be_clickable((By.ID, 'billingSubmit')))
+    # wait.until(EC.element_to_be_clickable((By.ID, 'billingSubmit')))
     button_submit.click()
 
     # card Payment
 
-    fram = wait.until(EL((By.CLASS_NAME, 'paymentFrameApexx')))
+    # fram = wait.until(EL((By.CLASS_NAME, 'paymentFrameApexx')))
+    fram = browser.find_element_by_class_name('paymentFrameApexx')
     browser.switch_to.frame(fram)
 
     card_fields = ['card_number', 'expiry_month', 'expiry_year', 'cvv']
     # Delete on fast internet
     time.sleep(1)
     for field in card_fields:
-        # f = browser.find_element_by_id(field)
-        f = wait.until(EL((By.ID, field)))
+        f = browser.find_element_by_id(field)
+        # f = wait.until(EL((By.ID, field)))
         f.send_keys(credentials[field])
 
     pay = browser.find_element_by_id('hostedPaymentsubmitBtn')
@@ -111,7 +141,7 @@ def nike(credentials):
     # pswrd.send_keys('Later')
     # pay_button = browser.find_element_by_id('btnLogin')
     # pay_button.click()
-
+    print('done')
     time.sleep(15)
     browser.close()
 
