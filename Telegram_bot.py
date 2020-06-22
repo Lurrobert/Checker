@@ -1,17 +1,13 @@
 import telegram
 from telegram.ext import Updater
 from telegram.ext import MessageHandler, Filters, CommandHandler
-import requests
-import schedule
 import time
 import logging
-from requests.exceptions import ConnectionError
 from uuid import uuid4
 import Checking
 import datetime
 from joblib import Parallel, delayed
 from multiprocessing import Pool
-import ray
 from multiprocessing import Process
 from telegram.ext.dispatcher import run_async
 import os
@@ -62,52 +58,21 @@ def receiving_data(update, context):
 
 @run_async
 def start_checking(update, context):
+    done_list = []
+
     credentials = context.user_data['credentials']
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text='Running')
-    # Checking.start(update, context)
 
-    # NEW
-    # done_list = []
-    # while update.message.text != 'stop':
-    #     check_list = []
-    #     for credit in credentials:
-    #         if (credit not in check_list) and (credit not in done_list):
-    #             date = datetime.datetime.now()
-    #             dor = credit['date'].split('.')
-    #             if len(dor) > 3:
-    #                 date_of_release = datetime. \
-    #                     datetime(year=int(dor[0]), month=int(dor[1]), day=int(dor[2]), hour=int(dor[3]))
-    #                 if date.day == date_of_release.day and date.month == date_of_release.month and date.hour == date_of_release.hour:
-    #                     check_list.append(credit)
-    #                     done_list.append(credit)
-    #             else:
-    #                 date_of_release = datetime. \
-    #                     datetime(year=int(dor[0]), month=int(dor[1]), day=int(dor[2]))
-    #                 if date.day == date_of_release.day and date.month == date_of_release.month:
-    #                     check_list.append(credit)
-    #                     done_list.append(credit)
-    #     if check_list:
-    #         Parallel(n_jobs=-1)(delayed(Checking.nike)(d) for d in check_list)
-    #
-    #     if len(done_list) == len(credentials):
-    #         break
-    #
-    #     time.sleep(60)
-    # End
-
-    #NEW2
-
-    done_list = []
     while context.user_data['credentials'][-1]['link'] != 'stop':
         done_list = Checking.start(update, context, done_list)
 
         if len(done_list) == len(credentials):
             break
-        time.sleep(10)
+        time.sleep(0.01)
 
     context.bot.send_message(chat_id=update.effective_chat.id,
-                             text='Stopped')
+                             text='DONE')
 
 
 start_handler = CommandHandler('start', start)
