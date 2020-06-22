@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3073ee75-66c9-4aaa-a492-fc370ade9156" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Adidas-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adidas.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Checking.py" beforeDir="false" afterPath="$PROJECT_DIR$/Checking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" />
-    </list>
+    <list default="true" id="3073ee75-66c9-4aaa-a492-fc370ade9156" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,10 +188,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1592842487606" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1592844773583">
+    <state x="431" y="172" key="MultipleFileMergeDialog" timestamp="1592852094247">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592844773583" />
+    <state x="431" y="172" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1592852094247" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1592852041749">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592852041749" />
     <state x="248" y="162" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1592843036546">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
