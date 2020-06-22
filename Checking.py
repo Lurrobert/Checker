@@ -119,6 +119,7 @@ class Nike:
                     break
 
 
+
     def nike(self):
         tic = time.time()
 
