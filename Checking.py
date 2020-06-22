@@ -16,6 +16,7 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 max_retry = 5
 
+
 class Nike:
 
     def __init__(self, credentials):
@@ -94,7 +95,8 @@ class Nike:
         while True:
             try:
                 retry += 1
-                add_to_cart = self.wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
+                add_to_cart = self.wait.until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[data-qa="add-to-cart"]')))
                 self.browser.execute_script("arguments[0].scrollIntoView(true);", add_to_cart)
                 add_to_cart.click()
                 try:
@@ -103,7 +105,8 @@ class Nike:
                     break
                 except:
                     try:
-                        self.browser.find_element_by_xpath('//*[@id="root"]/div/div/div[1]/div/header/div[1]/section/ul/li[3]/a/span')
+                        self.browser.find_element_by_xpath(
+                            '//*[@id="root"]/div/div/div[1]/div/header/div[1]/section/ul/li[3]/a/span')
                         print('added to cart')
                         break
                     except:
@@ -117,7 +120,6 @@ class Nike:
                 if retry > max_retry:
                     print('Too much errors')
                     break
-
 
     def nike(self):
         tic = time.time()
