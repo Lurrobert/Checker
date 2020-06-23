@@ -1,0 +1,1051 @@
+1591879399695	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile2qszV1"
+1591879401539	Marionette	INFO	Listening on port 52564
+1591879401558	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591879406713	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1591879412239	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1591879412493	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1591879412551	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1591879427233	Marionette	INFO	Stopped listening on port 52564
+1591879440005	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileSXRZ7d"
+1591879442090	Marionette	INFO	Listening on port 52722
+1591879442162	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591879445651	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1591879451614	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileA5UPCF"
+*** You are running in headless mode.
+1591879453286	Marionette	INFO	Listening on port 52857
+1591879453372	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591879462787	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1591879463039	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1591879463095	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1591879466350	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofiletV5j3p"
+*** You are running in headless mode.
+1591879467916	Marionette	INFO	Listening on port 52993
+1591879467986	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591879477214	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1591879477474	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1591879477529	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1591879521296	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilePH7od2"
+*** You are running in headless mode.
+1591879522789	Marionette	INFO	Listening on port 53135
+1591879522854	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1591879541276	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile3qOIEr"
+*** You are running in headless mode.
+1591879542813	Marionette	INFO	Listening on port 53277
+1591879542912	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591879552631	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1591879552891	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1591879552945	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1591879743462	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileZl2kcs"
+*** You are running in headless mode.
+1591879745231	Marionette	INFO	Listening on port 53446
+1591879745311	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1591949960505	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilekJYzyR"
+*** You are running in headless mode.
+1591949962229	Marionette	INFO	Listening on port 63241
+1591949962249	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591949964837	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591950000896	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilePeVS3Q"
+*** You are running in headless mode.
+1591950002315	Marionette	INFO	Listening on port 63557
+1591950002339	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591950004765	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1591950065163	Marionette	INFO	Stopped listening on port 63557
+Exiting due to channel error.
+1591950969452	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile0sys3E"
+1591950971656	Marionette	INFO	Listening on port 51359
+1591950971724	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591950974876	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1591950998789	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1591951024958	Marionette	INFO	Stopped listening on port 51359
+1591951369111	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilekJqAvJ"
+*** You are running in headless mode.
+1591951370823	Marionette	INFO	Listening on port 53234
+1591951370867	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591951470482	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileh0UJ9Z"
+*** You are running in headless mode.
+1591951472069	Marionette	INFO	Listening on port 53862
+1591951472120	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591951474676	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1591951531455	Marionette	INFO	Stopped listening on port 53862
+1591952853044	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileg0yqXK"
+*** You are running in headless mode.
+1591952854996	Marionette	INFO	Listening on port 59753
+1591952855004	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1591952914961	Marionette	INFO	Stopped listening on port 59753
+1591952979931	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilemd7kpC"
+1591952979931	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile3wVXdG"
+1591952979931	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileNME4Pl"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1591952982301	Marionette	INFO	Listening on port 60520
+1591952982301	Marionette	INFO	Listening on port 60518
+1591952982307	Marionette	INFO	Listening on port 60519
+1591952982377	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591952982385	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591952982385	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591953067312	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileGcWjxy"
+*** You are running in headless mode.
+1591953068909	Marionette	INFO	Listening on port 61327
+1591953068970	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591953098144	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileX7Ltyq"
+*** You are running in headless mode.
+1591953099778	Marionette	INFO	Listening on port 61613
+1591953099798	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953104471	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591953218985	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileSI7XPx"
+*** You are running in headless mode.
+1591953220553	Marionette	INFO	Listening on port 62294
+1591953220625	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953223747	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1591953249298	Marionette	INFO	Stopped listening on port 62294
+1591953270234	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile8X2AwO"
+1591953270234	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilePPlAF7"
+1591953270234	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileZjMXv4"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1591953272357	Marionette	INFO	Listening on port 62736
+1591953272358	Marionette	INFO	Listening on port 62735
+1591953272363	Marionette	INFO	Listening on port 62737
+1591953272398	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953272398	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953272408	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js, line 1: SyntaxError: '' literal not terminated before end of script
+JavaScript error: https://www.nike.com/ru/launch/t/air-max-95-split-style, line 1: TypeError: window.initilizeAppWithHandoffState is not a function
+1591953275390	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1591953275490	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ravelin.com/js/rvn-0.0.8.min.js, line 2: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591953392829	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilewWXZKZ"
+1591953392829	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileRbBRn6"
+1591953392835	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilekRNsf4"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1591953394874	Marionette	INFO	Listening on port 63668
+1591953394886	Marionette	INFO	Listening on port 63656
+1591953394968	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953394971	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953395121	Marionette	INFO	Listening on port 63657
+1591953395166	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591953481595	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile52P0U0"
+1591953481595	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile97eaDm"
+1591953481597	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilePUAsvf"
+1591953484309	Marionette	INFO	Listening on port 64387
+1591953484366	Marionette	INFO	Listening on port 64378
+1591953484400	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953484406	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953484417	Marionette	INFO	Listening on port 64379
+1591953484503	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953488874	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1591953519450	Marionette	INFO	Stopped listening on port 64387
+1591953520165	Marionette	INFO	Stopped listening on port 64379
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591953540201	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilezdTl5R"
+1591953540202	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilexrpc4R"
+1591953540203	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilebmA9dh"
+1591953540210	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile01UoKD"
+1591953540211	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilet8kX2K"
+1591953543844	Marionette	INFO	Listening on port 65273
+1591953543890	Marionette	INFO	Listening on port 65252
+1591953543919	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953543933	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953543984	Marionette	INFO	Listening on port 65249
+1591953543997	Marionette	INFO	Listening on port 65271
+1591953544024	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953544028	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953544091	Marionette	INFO	Listening on port 65251
+1591953544126	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953548518	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1591953549271	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1591953551292	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591953618107	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilewuqp16"
+1591953618112	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileTPyQ08"
+1591953618118	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileGh5V5z"
+1591953618118	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilekBnPSE"
+1591953621081	Marionette	INFO	Listening on port 50262
+1591953621139	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953621154	Marionette	INFO	Listening on port 50250
+1591953621206	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953621302	Marionette	INFO	Listening on port 50277
+1591953621307	Marionette	INFO	Listening on port 50279
+1591953621336	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953621408	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1591953656584	Marionette	INFO	Stopped listening on port 50279
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1591953659486	Marionette	INFO	Stopped listening on port 50250
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1591953660790	Marionette	INFO	Stopped listening on port 50262
+1591953661348	Marionette	INFO	Stopped listening on port 50277
+1591953768612	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilexdSSGm"
+1591953768616	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilelADrZ3"
+1591953770632	Marionette	INFO	Listening on port 51918
+1591953770673	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953770687	Marionette	INFO	Listening on port 51928
+1591953770778	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953773724	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1591953774187	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1591953813120	Marionette	INFO	Stopped listening on port 51928
+1591953815067	Marionette	INFO	Stopped listening on port 51918
+1591953877500	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileFAgjCS"
+1591953879373	Marionette	INFO	Listening on port 52848
+1591953879460	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591953963651	Marionette	INFO	Stopped listening on port 52848
+1591953969178	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilevgoE0E"
+1591953970924	Marionette	INFO	Listening on port 53456
+1591953971016	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591954034376	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileOKSGBW"
+1591954036276	Marionette	INFO	Listening on port 53881
+1591954036328	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591954092635	Marionette	INFO	Stopped listening on port 53881
+1591954094237	Marionette	INFO	Stopped listening on port 53456
+1591954140812	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile2tyJ8r"
+1591954142760	Marionette	INFO	Listening on port 54508
+1591954142764	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591954153874	Marionette	INFO	Stopped listening on port 54508
+1591954239481	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilet2URTp"
+1591954241254	Marionette	INFO	Listening on port 55096
+1591954241319	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5A001C,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5A001C,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+1591954425698	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile08XVxN"
+1591954427562	Marionette	INFO	Listening on port 56135
+1591954427652	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1591954454744	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofiletu8poF"
+1591954456743	Marionette	INFO	Listening on port 56665
+1591954456811	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1591954569651	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilel5InAt"
+1591954571661	Marionette	INFO	Listening on port 57553
+1591954571715	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x38001D,name=PContent::Msg_RegisterChromeItem) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x20004E,name=PBrowser::Msg_FlushTabState) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x200097,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x20004E,name=PBrowser::Msg_FlushTabState) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x200097,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x20004E,name=PBrowser::Msg_FlushTabState) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x200097,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x20004E,name=PBrowser::Msg_FlushTabState) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x200097,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+1591954590233	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile994CzQ"
+1591954592154	Marionette	INFO	Listening on port 57790
+1591954592191	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591954594860	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:395:10
+
+1591954635474	Marionette	INFO	Stopped listening on port 57790
+1591954678663	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileTHAL3P"
+1591954680650	Marionette	INFO	Listening on port 58395
+1591954680717	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591954691646	Marionette	INFO	Stopped listening on port 58395
+1591954859400	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileaxyKwC"
+1591954861433	Marionette	INFO	Listening on port 59581
+1591954861466	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1591954871161	Marionette	INFO	Stopped listening on port 59581
+1591954886526	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileCwuPGB"
+1591954888934	Marionette	INFO	Listening on port 59805
+1591954889008	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: jar:file:///Applications/Firefox.app/Contents/Resources/browser/omni.ja!/components/MacTouchBar.js, line 425: TypeError: TouchBarHelper.window is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/measure/data-capture/cic-main/dcm.js, line 8: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1591954894104	Marionette	INFO	Stopped listening on port 59805
+1591954988624	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileDkBlZj"
+1591954990372	Marionette	INFO	Listening on port 60628
+1591954990379	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1591955033005	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilecIUWb8"
+1591955034769	Marionette	INFO	Listening on port 61422
+1591955034841	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591955050423	Marionette	INFO	Stopped listening on port 61422
+1591955347821	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilebDvFHq"
+1591955349611	Marionette	INFO	Listening on port 63138
+1591955349661	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nike.com/assets/dotcom/nav/4.33.0/dotcom-nav-client.js, line 67: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1591955367046	Marionette	INFO	Stopped listening on port 63138
+1591955402384	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile4rSO88"
+1591955404212	Marionette	INFO	Listening on port 63770
+1591955404244	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-NTF2X45, line 296: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x380131,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://www.nike.com/assets/measure/data-capture/cic-main/dcm.js, line 8: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.nike.com/assets/measure/data-capture/cic-main/dcm.js, line 8: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1591955418457	Marionette	INFO	Stopped listening on port 63770
+1591955434243	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileT4HjyQ"
+1591955436065	Marionette	INFO	Listening on port 64305
+1591955436087	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591955451504	Marionette	INFO	Stopped listening on port 64305
+1591955531525	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilekBCLbn"
+1591955533350	Marionette	INFO	Listening on port 65135
+1591955533378	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1591955568869	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileoUKx94"
+1591955570740	Marionette	INFO	Listening on port 65527
+1591955570823	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591955574496	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 4014: TypeError: res.payload.error.data is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x38001D,name=PContent::Msg_RegisterChromeItem) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x20004E,name=PBrowser::Msg_FlushTabState) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x200097,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x380133,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x20004E,name=PBrowser::Msg_FlushTabState) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x200097,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+1591955797642	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile1XE1FR"
+1591955799533	Marionette	INFO	Listening on port 50387
+1591955799593	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+1591955863787	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofile7QrU62"
+1591955863792	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofilecxhYBi"
+1591955863796	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--window-size=1920,1080" "-foreground" "-no-remote" "-profile" "/var/folders/v7/2ymss9rd5kj3gvxbk8ptpl_00000gn/T/rust_mozprofileGqk4Cp"
+1591955866218	Marionette	INFO	Listening on port 51316
+1591955866259	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591955866281	Marionette	INFO	Listening on port 51327
+1591955866322	Marionette	INFO	Listening on port 51304
+1591955866352	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591955866356	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nike.com/assets/experience/dotcom-snkrs/ux/builds/app.604de71ef2de6c1622c5.js line 1 > eval, line 295: TypeError: validIds is undefined
+2020-06-12 13:05:03.966 firefox-bin[86165:2948096] -deltaZ is deprecated for NSEventTypeMagnify.  Please use -magnification.
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
